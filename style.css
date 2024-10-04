@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --backgroundColor: #62b4be;
+    --second-section: #e8e5e5;
+    --font-color: rgb(161, 160, 160);
+}
+
+.card-component{
+    width: 42%;
+    margin: 3rem auto;
+    border: 1px solid;
+    height: auto;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    border: 2px solid var(--backgroundColor);
+}
+
+.first-section{
+    background-color: var(--backgroundColor);
+    width: 25%;
+    padding: 4.05rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 1rem;
+    row-gap: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+
+.profile > img{
+    width: 7rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.role > p{
+    font-size: smaller;
+}
+
+.second-section{
+    width: fit-content;
+    background-color: var(--second-section);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    row-gap: 1rem;
+}
+
+.title > h3{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    border-bottom: 1px solid rgb(198, 198, 198);
+    justify-content: start;
+    letter-spacing: 0.3rem;
+}
+
+.contact-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.email .phone{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;
+}
+
+.email > p{
+    font-size: x-small;
+    color: var(--font-color);
+}
+
+.phone > p{
+    font-size: x-small;
+    color: var(--font-color);
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.project2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.title-2 > h3{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    border-bottom: 1px solid rgb(198, 198, 198);
+    justify-content: start;
+    letter-spacing: 0.3rem;
+}
+
+.recent .most-viewed{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.3rem;   
+}
+
+.recent > p{
+    font-size: x-small;
+    color: var(--font-color);
+}
+
+.most-viewed > p{
+    font-size: x-small;
+    color: var(--font-color);
+}
+
+
+
+.fb > img{
+    width: 2rem;
+    background-color: var(--backgroundColor);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.fb > img:hover{
+    transform: translateY(-0.5rem);   
+    background-color: #15a1b3;
+}
+
+.twitter > img{
+    width: 2rem;
+    background-color: var(--backgroundColor);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.twitter > img:hover{
+    transform: translateY(-0.5rem);   
+    background-color: #15a1b3;
+}
+
+.instagram > img{
+    width: 2rem;
+    background-color: var(--backgroundColor);
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.instagram > img:hover{
+    transform: translateY(-0.5rem);   
+    background-color: #15a1b3;
+}
+
+.logos{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+    column-gap: 1rem;
+}
+
+
+.third-section{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    text-align: end;
+    row-gap: 1rem;
+    padding: 4rem 3rem;
+    justify-content: flex-start;
+}
+
+.third-section > div{
+    background-color: var(--backgroundColor);
+    color: white;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 768px){
+    .card-component{
+        width: 76%;
+        margin: 3rem auto;
+        border: 1px solid;
+        height: auto;
+        font-family: "Roboto Mono", monospace;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        border: 2px solid var(--backgroundColor);
+    }
+
+}
+
